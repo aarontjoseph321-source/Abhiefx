@@ -1,0 +1,168 @@
+
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABXZ.EFX — Premium VFX Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:#0a0a14;color:#f8fafc;line-height:1.6}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1180px,calc(100% - 48px));margin:auto}header{position:fixed;top:0;width:100%;z-index:1000;background:rgba(10,10,20,.75);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-size:1.5rem;font-weight:900;letter-spacing:-0.03em}
+.logo span{background:linear-gradient(90deg,#22d3ee,#6366f1,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;gap:24px;font-size:.95rem;color:#cbd5e1}
+
+section{padding:110px 0}
+.hero{padding-top:170px;min-height:100vh;display:flex;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.eyebrow{color:#67e8f9;text-transform:uppercase;letter-spacing:.25em;font-size:.75rem;font-weight:700}
+h1{font-size:clamp(3rem,8vw,7rem);line-height:.95;letter-spacing:-.05em;font-weight:900;margin:20px 0}
+.lead{font-size:1.15rem;color:#cbd5e1;max-width:620px}
+.actions{display:flex;gap:16px;margin-top:32px;flex-wrap:wrap}
+.btn{padding:14px 26px;border-radius:999px;font-weight:700;transition:.3s}
+.btn-primary{background:linear-gradient(90deg,#06b6d4,#6366f1,#ec4899);color:#fff;box-shadow:0 15px 40px rgba(99,102,241,.35)}
+.btn-secondary{border:1px solid rgba(255,255,255,.15);color:#fff;background:rgba(255,255,255,.04)}
+.btn:hover{transform:translateY(-2px)}
+
+.device{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:28px;padding:18px;box-shadow:0 30px 80px rgba(0,0,0,.35);backdrop-filter:blur(20px)}
+.device img{border-radius:18px;aspect-ratio:4/5;object-fit:cover}
+
+.section-title{font-size:clamp(2rem,5vw,4rem);font-weight:900;letter-spacing:-.04em;margin-bottom:16px}
+.section-text{color:#cbd5e1;max-width:720px;margin-bottom:40px}
+
+.projects{display:grid;gap:80px}
+.project{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.project.reverse .project-media{order:-1}
+.project-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:28px;padding:24px;box-shadow:0 20px 50px rgba(0,0,0,.25);backdrop-filter:blur(20px)}
+.project-card img{border-radius:18px;aspect-ratio:16/10;object-fit:cover}
+.tag{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.06);color:#e2e8f0;font-size:.8rem;font-weight:600;margin:4px 6px 0 0}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{padding:32px;border:1px solid rgba(255,255,255,.08);border-radius:24px;background:rgba(255,255,255,.04);backdrop-filter:blur(20px);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+
+.contact{background:linear-gradient(135deg,#0f172a,#111827,#312e81);color:#fff;border:1px solid rgba(255,255,255,.08);border-radius:40px;padding:80px 50px;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.contact p{color:#bbb;max-width:640px;margin:16px auto 30px}
+
+footer{padding:30px 0;text-align:center;color:#94a3b8}
+
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s ease}
+.reveal.active{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .hero-grid,.project{grid-template-columns:1fr}
+  .project.reverse .project-media{order:0}
+  .nav-links{display:none}
+  section{padding:80px 0}
+  .contact{padding:60px 24px}
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="#home">ABXZ<span>.EFX</span></a>
+        <div class="nav-links">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Cinematic Visual Effects Artist</div>
+        <h1>Turning Ordinary Shots Into Extraordinary Visual Stories.</h1>
+        <p class="lead">Premium VFX, color grading, photo manipulation, poster design, and social media content for creators and brands.</p>
+        <div class="actions">
+          <a href="#work" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="device reveal">
+        <img src="imageshero.jpg" alt="ABXZ EFX Showcase">
+      </div>
+    </div>
+  </section>  <section id="work">
+    <div class="container">
+      <h2 class="section-title">Selected Work</h2>
+      <p class="section-text">A curated collection of cinematic edits and visual effects projects.</p><div class="projects">
+    <article class="project reveal">
+      <div>
+        <div class="eyebrow">Case Study 01</div>
+        <h3 class="section-title" style="font-size:2.5rem">Cinematic Color Grading</h3>
+        <p class="section-text">Transforming flat footage into a dramatic, film-like visual experience.</p>
+        <span class="tag">DaVinci Resolve</span><span class="tag">Color Theory</span>
+      </div>
+      <div class="project-card project-media">
+        <img src="imagescolorgrading.jpg" alt="Color Grading">
+      </div>
+    </article>
+
+    <article class="project reverse reveal">
+      <div>
+        <div class="eyebrow">Case Study 02</div>
+        <h3 class="section-title" style="font-size:2.5rem">Photo Manipulation</h3>
+        <p class="section-text">High-end composite artwork with realistic lighting and atmospheric effects.</p>
+        <span class="tag">Photoshop</span><span class="tag">Compositing</span>
+      </div>
+      <div class="project-card project-media">
+        <img src="imagesphotomanipulation.jpg" alt="Photo Manipulation">
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div>
+        <div class="eyebrow">Case Study 03</div>
+        <h3 class="section-title" style="font-size:2.5rem">Poster Design & Thumbnails</h3>
+        <p class="section-text">Attention-grabbing visuals optimized for social media and YouTube.</p>
+        <span class="tag">Poster Design</span><span class="tag">YouTube</span>
+      </div>
+      <div class="project-card project-media">
+        <img src="imagesposterdesign.jpg" alt="Poster Design">
+      </div>
+    </article>
+  </div>
+</div>
+
+  </section>  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <div class="services">
+        <div class="card"><h3>VFX Compositing</h3><p>Screen replacement, CGI integration, and cinematic effects.</p></div>
+        <div class="card"><h3>Reels Editing</h3><p>Fast-paced edits with transitions, subtitles, and color grading.</p></div>
+        <div class="card"><h3>Thumbnail Design</h3><p>High CTR thumbnails and posters for YouTube and Instagram.</p></div>
+      </div>
+    </div>
+  </section>  <section id="contact">
+    <div class="container">
+      <div class="contact reveal">
+        <h2 class="section-title" style="margin-bottom:0">Let's Create Something Amazing</h2>
+        <p>Send your photos or footage, and I'll transform them into cinematic visuals.</p>
+        <div class="actions" style="justify-content:center">
+          <a href="https://www.instagram.com/_abxz.efx" target="_blank" class="btn btn-primary">Instagram</a>
+          <a href="https://wa.me/" target="_blank" class="btn btn-secondary">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>  <footer>
+    © 2026 ABXZ.EFX — Premium VFX Portfolio.
+  </footer>  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('active');
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script></body>
+</html>
